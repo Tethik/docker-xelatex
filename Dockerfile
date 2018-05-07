@@ -1,13 +1,13 @@
 FROM ubuntu
 MAINTAINER tethik@gmail.com
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 
 # Install all TeX and LaTeX dependences
 RUN apt update && \
   apt install --yes --no-install-recommends \
   git \
-  ca-certificates \
+  ssh \
   make \
   texlive-fonts-recommended \
   texlive-generic-recommended \
